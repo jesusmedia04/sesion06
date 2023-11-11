@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion06</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>BOX MODEL O MODELO DE CAJA EN CSS</h1>
+
+    <h2>Que es Box Model</h2>
+    <p>Describe como se estructuran y dimensionan los elementos en una pagina mediante cajas rectangulares</p>
+    
+    <h2>Que es una caja en box model</h2>
+    <p>Cada elemento es una caja, y cada caja esta compuesta por cuatro areas principales: <br> content, padding, border y margin.</p>
+    <img src="./assents/box-model.png" alt="">
+    <h2>Elementos y/o colores y/o capas de una caja box model</h2>
+    <div>
+        <h3>Content - azul</h3> 
+        <p>La parte interna de la caja que contiene el contenido real del elemento, como texto, imágenes u otros elementos HTML</p>
+        <div class="content-box">Content</div>
+    </div>
+    <div>
+        <h3>Padding - verde</h3>
+        <p>El espacio entre el contenido y el borde. Se utiliza para aumentar el espacio interno de la caja.</p>
+        <div class="padding-box">Padding</div>
+    </div>
+    <div>
+        <h3>Border - amarillo</h3>
+        <p>La línea que rodea el contenido y el relleno. Puede tener un ancho, estilo y color específicos.</p>
+        <div class="border-box">Border</div>
+    </div>
+    <div>
+        <h3>Margin - naranja</h3>
+        <p>El espacio entre la caja y otros elementos adyacentes en la página. Se utiliza para aumentar el espacio externo de la caja.</p>
+        <div class="margin-box">Margin</div>
+    </div>
+
+    <h2>Que son las propiedades width y height</h2>
+    <div class="width-box">width</div>
+    <p>Modifica el ancho del elemento, en este caso 200 px de ancho</p>
+    <div class="height-box">height</div>
+    <p>Modifica el alto del elemento, en este caso 50 px de alto</p>
+
+    <h2>Cual es la importancia de usar box-sizing: border-box ; y con que selector se utiliza</h2>
+    <p>Es importante porque incluye tanto el relleno como el borde en el tamaño total del elemento, <br>lo que facilita el control del diseño y evita sorpresas en el diseño</p>
+    
+    <h2>Definicion y ejemplo de Padding</h2>
+    <p>Se refiere al espacio entre el contenido de un elemento y su borde.</p>
+    <div class="box padding-example"><p>Padding</p></div>
+
+    <h2>Definicion y ejemplo de Border</h2>
+    <p>Se refiere a la línea que rodea el contenido y el relleno de un elemento.</p>
+    <div class="box border-example"> <p>Border</p></div>
+
+    <h2>Definicion y ejemplo de Margin</h2>
+    <p>Se refiere al espacio entre el borde de un elemento y los elementos circundantes.</p>
+    <div class="box margin-example"><p>Margin</p></div>
+
+    <h2>Que es el colapso de margenes verticales</h2>
+    <p>Ocurre cuando los márgenes verticales de dos elementos adyacentes se combinan en lugar de acumularse.</p>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <p>En este caso, en lugar de que la distancia entre div1 y div2 sea la suma de los márgenes (20px + 30px = 50px), <br> el colapso de márgenes tomará el máximo de los dos márgenes, que en este ejemplo sería 30px. Entonces, la distancia final entre los elementos será de 30px.</p>
+     <h2>Que es el margen negativo</h2>
+     <p>un margen negativo significa que el elemento se desplazará hacia fuera de su contenedor <br>o se superpondrá a otros elementos. Normalmente, el margen se utiliza para agregar espacio alrededor de un elemento, pero cuando se establece como un valor negativo, se invierte este comportamiento.</p>
+    <h2>Concepto y ejemplo de Border Radius</h2>
+    <p>Se utiliza para establecer radios de esquina para los bordes de un elemento. </p>
+    <div class="box-border"></div>
+    </body>
+</html>
